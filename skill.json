@@ -1,0 +1,35 @@
+{
+  "name": "genpark-realtime-voice-dictation-meeting-memo-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Ultra-low-latency real-time voice dictation & structured meeting memo synthesizer.",
+  "author": "genpark",
+  "category": "productivity",
+  "tags": [
+    "voice-dictation",
+    "meeting-memo",
+    "speech-to-text",
+    "executive-summary",
+    "ph-august17"
+  ],
+  "inputs": {
+    "audio_stream_chunk": {
+      "type": "string"
+    },
+    "speaker_labels": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "formatted_markdown_memo": {
+      "type": "string"
+    },
+    "action_items_count": {
+      "type": "integer"
+    },
+    "latency_ms": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
